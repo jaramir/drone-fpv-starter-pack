@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Drone FPV – Starter Pack</title>
+  <base target="_blank" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -176,6 +177,34 @@
 
     .gear-list li[style*="display:block"]::before { display: none; }
 
+    .alt-box {
+      margin-top: 1.2rem;
+      padding: 1rem 1.2rem;
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--muted);
+      border-radius: 0 4px 4px 0;
+      background: var(--surface);
+    }
+    .alt-box-label {
+      font-size: .65rem;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: .4rem;
+    }
+    .alt-box-title {
+      display: flex;
+      align-items: baseline;
+      gap: .8rem;
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      letter-spacing: .04em;
+      color: #fff;
+      margin-bottom: .2rem;
+    }
+    .alt-box-title a { color: #fff; text-decoration: none; border-bottom: 1px solid var(--border); transition: color .2s, border-color .2s; }
+    .alt-box-title a:hover { color: var(--accent); border-color: var(--accent); }
+
     .upgrade-note {
       margin-left: 1.5rem;
       padding: .8rem 1rem;
@@ -319,11 +348,12 @@
         </summary>
         <div class="fase-body">
           <p class="fase-desc">
-            Questa è la fase economicamente più impegnativa: sbagliare qui brucia soldi veri. Vale la pena fermarsi un momento.
+            Questa è la fase economicamente più impegnativa. Vale la pena fermarsi a riflettere un momento.
           </p>
           <p class="fase-desc">
             Prima di tutto, qualche saluto. Se volete far volare un grazioso drone da 150 g nella piazza del paese,
-            segnare il miglior tempo in qualifica alla prossima gara, o portare in volo una fotocamera da 4 kg —
+            segnare il miglior tempo in qualifica alla prossima gara, portare in volo una fotocamera da 4 kg,
+            o tirar fuori il saldatore e costruirvi il drone da un kit —
             vi serve una guida diversa. Buona fortuna davvero, ma non è questa.
           </p>
           <p class="fase-desc">
@@ -333,25 +363,21 @@
           </p>
           <div class="gear-label">Materiale consigliato</div>
           <ul class="gear-list">
-            <li style="flex-direction:column; align-items:flex-start; gap:.6rem; display:block; padding-left:0;">
-              <div style="display:flex; align-items:center; gap:.7rem; width:100%;">
-                <span style="color:var(--accent); font-size:.8rem; flex-shrink:0;">→</span>
-                <a href="https://store.dji.com/it/product/dji-goggles-n3" target="_blank">DJI Goggles N3</a>
-                <span class="price">€ 270 <em style="font-style:normal; opacity:.6">(upgrade: <a href="https://store.dji.com/it/product/dji-goggles-3" target="_blank" style="color:var(--muted); border-bottom:1px solid var(--border);">G3</a> · € 670)</em></span>
-              </div>
-              <div class="upgrade-note">
-                <span class="upgrade-label">Cosa guadagnate con il G3</span>
-                <ul class="upgrade-list">
-                  <li>100 fps invece di 60 fps — il movimento è più fluido, soprattutto ad alta velocità</li>
-                  <li>Due schermi OLED invece di uno LCD — colori, contrasto e nitidezza su un altro livello</li>
-                  <li>Andate in un negozio e provate la differenza: vale più di mille parole</li>
-                </ul>
-              </div>
-            </li>
+            <li><a href="https://store.dji.com/it/product/dji-goggles-n3" target="_blank">DJI Goggles N3</a> <span class="price">€ 270</span></li>
             <li><a href="https://drone24hours.com/products/geprc-vapor-d5-hd-o4-pro" target="_blank">GEPRC Vapor-D5 HD O4 Pro</a> <span class="price">€ 555 · versione ELRS 2.4 GHz</span></li>
             <li><a href="https://www.fpv24.com/it/tattu/tattu-r-line-versione-60-batteria-lipo-1480mah-160c-6s-222v-xt60-plug-st" target="_blank">2× Tattu R-Line 6S 1480mAh 160C</a> <span class="price">€ 47 cad.</span></li>
-            <li>Caricabatterie HOTA T6</li>
+            <li><a href="https://www.amazon.it/dp/B0F8B883C6" target="_blank">ISDT 608PD</a> <span class="price">€ 33</span></li>
           </ul>
+
+          <div class="alt-box">
+            <div class="alt-box-label">Alternativa · Visore</div>
+            <div class="alt-box-title"><a href="https://store.dji.com/it/product/dji-goggles-3" target="_blank">DJI Goggles G3</a> <span class="price">€ 670</span></div>
+            <ul class="upgrade-list" style="margin-top:.6rem;">
+              <li>100 fps invece di 60 fps — il movimento è più fluido, soprattutto ad alta velocità</li>
+              <li>Due schermi OLED invece di uno LCD — colori, contrasto e nitidezza su un altro livello</li>
+              <li>Andate in un negozio e provate la differenza: vale più di mille parole</li>
+            </ul>
+          </div>
         </div>
       </details>
 
