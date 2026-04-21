@@ -166,6 +166,22 @@
       font-size: .8rem;
     }
 
+    .gear-list a {
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px solid var(--border);
+      transition: color .2s, border-color .2s;
+    }
+    .gear-list a:hover { color: var(--accent); border-color: var(--accent); }
+
+    .price {
+      margin-left: auto;
+      font-size: .78rem;
+      color: var(--muted);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
     .alt-note {
       margin-top: .8rem;
       font-size: .82rem;
@@ -239,8 +255,8 @@
           </p>
           <div class="gear-label">Materiale consigliato</div>
           <ul class="gear-list">
-            <li>Radiomaster Pocket ELRS 2.4 GHz</li>
-            <li>Uncrashed (simulatore FPV su Steam)</li>
+            <li><a href="https://www.fpv24.com/it/radiomaster/radiomaster-pocket-radio-controller-rc-telecomando-cc2500-trasparente" target="_blank">Radiomaster Pocket ELRS 2.4 GHz</a> <span class="price">~90 €</span></li>
+            <li><a href="https://store.steampowered.com/app/1682970/Uncrashed__FPV_Drone_Simulator/" target="_blank">Uncrashed — FPV Drone Simulator</a> <span class="price">12,99 € · Windows / Mac</span></li>
           </ul>
         </div>
       </details>
@@ -255,10 +271,14 @@
         <div class="fase-body">
           <p class="fase-desc">
             In Italia la certificazione A1/A3 ENAC è obbligatoria per volare legalmente.
-            Il PDF con il materiale di studio si scarica gratis dal sito ENAC, l'esame online costa 30 €.
-            In molti paesi europei è gratuito e — dettaglio utile — la certificazione si trasferisce: se la fate all'estero vale anche in Italia.
+            Il materiale di studio si scarica gratis dal sito ENAC. L'esame online costa 31 € e include quattro tentativi —
+            più che sufficienti se studiate. Non è fisica nucleare, suvvia.
+            In molti paesi europei è gratuito e la certificazione si trasferisce: se la fate all'estero vale anche qui.
           </p>
-          <p class="no-gear">Nessun materiale da acquistare. Scarica il PDF da <strong>enac.gov.it</strong> e studia.</p>
+          <div class="gear-label">Cosa fare</div>
+          <ul class="gear-list">
+            <li><a href="https://www.enac.gov.it/sicurezza-aerea/droni/piloti-uas/come-si-diventa-pilota-uas-drone-open-a1a3/" target="_blank">Pagina ENAC A1/A3</a> <span class="price">Scarica il PDF, studialo, passa l'esame · 31 €</span></li>
+          </ul>
         </div>
       </details>
 
