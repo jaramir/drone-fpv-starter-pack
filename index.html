@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drone FPV – Starter Pack</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:      #0a0c0f;
+      --surface: #111418;
+      --border:  #1e2328;
+      --accent:  #f5a623;
+      --text:    #d8dde6;
+      --muted:   #6b7280;
+      --font-display: 'Bebas Neue', sans-serif;
+      --font-body:    'DM Sans', sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      font-weight: 300;
+      line-height: 1.7;
+    }
+
+    .wrapper { max-width: 800px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* ── HEADER ── */
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 1.2rem 0;
+    }
+    header .wrapper { display: flex; align-items: center; gap: .8rem; }
+
+    .logo-mark {
+      width: 28px; height: 28px;
+      background: var(--accent);
+      clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+      flex-shrink: 0;
+    }
+    .site-name {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      letter-spacing: .08em;
+      color: #fff;
+    }
+    .site-name span { color: var(--accent); }
+
+    /* ── HERO ── */
+    .hero { padding: 5rem 0 4rem; }
+
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(3rem, 8vw, 5.5rem);
+      line-height: .95;
+      letter-spacing: .03em;
+      color: #fff;
+      margin-bottom: 1.2rem;
+    }
+    .hero h1 em { color: var(--accent); font-style: normal; display: block; }
+
+    .hero p {
+      color: var(--muted);
+      font-size: 1rem;
+      max-width: 480px;
+    }
+
+    /* ── FASI ── */
+    .fasi { padding: 3rem 0 5rem; }
+
+    .fasi-label {
+      font-size: .7rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 2.5rem;
+    }
+
+    .fase {
+      display: grid;
+      grid-template-columns: 3rem 1fr;
+      gap: 0 1.5rem;
+      padding: 2rem 0;
+      border-top: 1px solid var(--border);
+    }
+    .fase:last-child { border-bottom: 1px solid var(--border); }
+
+    .fase-num {
+      font-family: var(--font-display);
+      font-size: 2.8rem;
+      color: var(--border);
+      line-height: 1;
+      padding-top: .15rem;
+    }
+
+    .fase-title {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      letter-spacing: .05em;
+      color: #fff;
+      margin-bottom: .4rem;
+    }
+
+    .fase-desc {
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-top: .8rem;
+      font-size: .65rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      padding: .2rem .6rem;
+      border-radius: 2px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 1.8rem 0;
+    }
+    footer .wrapper {
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 1rem;
+    }
+    .footer-note { font-size: .78rem; color: var(--muted); }
+
+    .gh-link {
+      display: inline-flex; align-items: center; gap: .4rem;
+      font-size: .78rem; color: var(--muted);
+      text-decoration: none;
+      transition: color .2s;
+    }
+    .gh-link:hover { color: var(--accent); }
+    .gh-link svg { width: 16px; height: 16px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="wrapper">
+      <div class="logo-mark"></div>
+      <span class="site-name">Drone <span>FPV</span> — Starter Pack</span>
+    </div>
+  </header>
+
+  <div class="wrapper">
+
+    <section class="hero">
+      <h1>Da zero<em>al volo.</em></h1>
+      <p>Una guida pratica per iniziare nel mondo dei droni FPV:
+         tutto quello che ti serve, nell'ordine giusto.</p>
+    </section>
+
+    <section class="fasi">
+      <div class="fasi-label">La guida — 5 fasi</div>
+
+      <div class="fase">
+        <div class="fase-num">01</div>
+        <div class="fase-content">
+          <div class="fase-title">Radiocomando &amp; Simulatore</div>
+          <div class="fase-desc">Prima di toccare un drone vero, impara a pilotare su simulatore. Quale radiocomando scegliere e come configurarlo.</div>
+          <span class="badge">In arrivo</span>
+        </div>
+      </div>
+
+      <div class="fase">
+        <div class="fase-num">02</div>
+        <div class="fase-content">
+          <div class="fase-title">Patentino</div>
+          <div class="fase-desc">Come ottenere la certificazione A1/A3 ENAC per volare legalmente in Italia. Quiz, costi e dove registrarsi.</div>
+          <span class="badge">In arrivo</span>
+        </div>
+      </div>
+
+      <div class="fase">
+        <div class="fase-num">03</div>
+        <div class="fase-content">
+          <div class="fase-title">Drone &amp; Visore</div>
+          <div class="fase-desc">Scegliere il primo drone FPV: ready-to-fly o kit di montaggio? E quale visore o monitor abbinare.</div>
+          <span class="badge">In arrivo</span>
+        </div>
+      </div>
+
+      <div class="fase">
+        <div class="fase-num">04</div>
+        <div class="fase-content">
+          <div class="fase-title">Burocrazia</div>
+          <div class="fase-desc">Registrazione del drone, assicurazione RC, dove si può volare e le regole da conoscere.</div>
+          <span class="badge">In arrivo</span>
+        </div>
+      </div>
+
+      <div class="fase">
+        <div class="fase-num">05</div>
+        <div class="fase-content">
+          <div class="fase-title">Accessori</div>
+          <div class="fase-desc">Batterie, caricabatterie, ricambi e attrezzi utili per volare di più e riparare più in fretta.</div>
+          <span class="badge">In arrivo</span>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="wrapper">
+      <span class="footer-note">Contenuti in lavorazione</span>
+      <a class="gh-link" href="https://github.com/jaramir/drone-fpv-starter-pack" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        github.com/jaramir/drone-fpv-starter-pack
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>
